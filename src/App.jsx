@@ -1,8 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Splash from "./pages/Splash";
+import Login from "./pages/Login";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Checkr</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Splash />} />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

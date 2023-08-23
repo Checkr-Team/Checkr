@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "Octa-Brain";
+  src: url(../public/fonts/Octa\ Brain\ Regular.ttf);
+}
+
+@font-face {
+  font-family: "Ginger";
+  src: url(../public/fonts/F37\ Ginger\ Regular.ttf);
+}

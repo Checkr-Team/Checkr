@@ -2,7 +2,12 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        "octa-brain": ["Octa-Brain", "sans-serif"],
+        ginger: ["Ginger", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
