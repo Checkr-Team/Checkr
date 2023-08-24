@@ -11,3 +11,7 @@
   font-family: "Ginger";
   src: url(../public/fonts/F37\ Ginger\ Regular.ttf);
 }
+
+.active {
+  @apply text-blue-400;
+}
