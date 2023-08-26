@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: "Octa-Brain";
-  src: url(../src/assets/fonts/Octa\ Brain\ Regular.ttf);
+  src: url(/fonts/Octa\ Brain\ Regular.ttf);
 }
 
 @font-face {
   font-family: "Ginger";
-  src: url(../src/assets/fonts/F37\ Ginger\ Regular.ttf);
+  src: url(/fonts/F37\ Ginger\ Regular.ttf);
 }
 
 .active {
