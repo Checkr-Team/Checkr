@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Filter() {
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-between my-4">
       <NavLink to="all">
         <FilterContainerText>All</FilterContainerText>
       </NavLink>

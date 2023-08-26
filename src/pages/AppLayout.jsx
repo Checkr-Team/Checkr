@@ -4,7 +4,7 @@ import BottomBar from "../components/BottomBar";
 
 export default function AppLayout() {
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="flex flex-col h-screen justify-between relative">
       <Outlet />
       <BottomBar />
     </div>

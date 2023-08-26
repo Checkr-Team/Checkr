@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 export default function BottomBar() {
   return (
-    <div className="shadow-inner h-20 flex justify-around items-center">
+    <div className="shadow-inner h-20 flex justify-around items-center sticky bottom-0 bg-white">
       <NavLink to="home">
         <h1>Home</h1>
       </NavLink>

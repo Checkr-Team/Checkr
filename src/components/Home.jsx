@@ -16,7 +16,7 @@ export default function Home() {
     <div className="h-screen py-8 px-4 font-ginger">
       <div className="flex justify-between">
         <div className="flex">
-          <img src="../../public/images/avatar.png" />
+          <img src="../../src/assets/images/avatar.png" />
           <h1 className="font-ginger text-2xl mt-2 ml-2">Hi, {user}</h1>
         </div>
         <div className="bg-orange-100 rounded-full">
