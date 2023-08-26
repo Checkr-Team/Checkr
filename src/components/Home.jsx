@@ -6,6 +6,7 @@ import {
 import SearchBar from "./SearchBar";
 import Filter from "./Filter";
 import { Outlet } from "react-router-dom";
+import AppSection from "./AppSection";
 
 export default function Home() {
   // eslint-disable-next-line no-unused-vars
@@ -31,10 +32,7 @@ export default function Home() {
       >
         <MagnifyingGlassIcon className="h-5 w-5 absolute m-1 pointer-events-none" />
       </SearchBar>
-      <div className="flex justify-between mt-8">
-        <h1 className="text-xl">Categories</h1>
-        <p className="text-[#5A5A5A] mt-1">View more &gt;</p>
-      </div>
+      <AppSection firstChild="Categories" secondChild="View more &gt;" />
       <Filter />
       <Outlet />
     </div>
