@@ -1,6 +1,7 @@
-import { UserIcon, LockClosedIcon } from "@heroicons/react/outline";
+import { UserIcon, LockClosedIcon } from "@heroicons/react/24/outline";
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import SearchBar from "../components/SearchBar";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -18,26 +19,22 @@ export default function Login() {
       <div className="h-2/3 flex flex-col items-center justify-around">
         <h1 className="font-ginger text-2xl">Connect Wallet</h1>
         <form className="flex flex-col items-center " onSubmit={handleSubmit}>
-          <div className="relative flex items-center">
+          <SearchBar
+            placeholder="Wallet Address/NFT ID"
+            value={walletAddress}
+            onChangeHandler={setWalletAddress}
+          >
             <UserIcon className="h-5 w-5 absolute m-1 pointer-events-none" />
-            <input
-              type="text"
-              className="border rounded-2xl border-black p-2 pl-9 w-80 font-ginger"
-              placeholder="Wallet Address/ NFT ID"
-              value={walletAddress}
-              onChange={(e) => setWalletAddress(e.target.value)}
-            />
-          </div>
-          <div className="relative flex items-center mt-8">
+          </SearchBar>
+          <SearchBar
+            placeholder="Password"
+            value={password}
+            onChangeHandler={setPassword}
+            cssClass="mt-8"
+          >
             <LockClosedIcon className="h-5 w-5 absolute m-1 pointer-events-none" />
-            <input
-              type="text"
-              className="border rounded-2xl border-black p-2 pl-9 w-80 font-ginger"
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-            />
-          </div>
+          </SearchBar>
+
           <button className="text-white bg-gradient-to-r from-[#3870FF] to-[#83A5FF] w-fit font-ginger p-3 mt-16 rounded-md">
             Connect Wallet &gt;
           </button>

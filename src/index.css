@@ -15,3 +15,8 @@
 .active {
   @apply text-blue-400;
 }
+.active div {
+  @apply bg-[#3870FF];
+  @apply text-white;
+  @apply border-[#3870FF];
+}
