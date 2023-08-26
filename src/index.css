@@ -13,7 +13,7 @@
 }
 
 .active {
-  @apply text-blue-400;
+  @apply text-[#3870FF];
 }
 .active div {
   @apply bg-[#3870FF];
